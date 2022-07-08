@@ -11,7 +11,11 @@ function App() {
           className='logo' />
       </div>
       <div className='calculatorContainer'>
-        
+        <div className='row'></div>
+        <div className='row'></div>
+        <div className='row'></div>
+        <div className='row'></div>
+        <div className='row'></div>
       </div>
     </div>
   );
