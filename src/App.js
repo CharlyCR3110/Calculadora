@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button'
+import Screen from './components/Screen'
 import logo from './images/calculadoraLogo.png'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           className='logo' />
       </div>
       <div className='calculatorContainer'>
+        <Screen />
         <div className='row'>
           <Button>1</Button>
           <Button>2</Button>
