@@ -7,11 +7,11 @@ function Button ( props ) {
 	};
 	
 	return (
-		<div
-			ClassName={ `buttonContainer ${isOperator(props.children) ? 'operator' : '' }`.trimEnd() } >
+		<div className={ `buttonContainer ${isOperator(props.children) ? 'operator' : '' }`.trimEnd() } >
 			{props.children}
 		</div>
   );
 }
+
 
 export default Button;
