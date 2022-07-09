@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ClearButton = (props) => (
+const ClearButton = () => (
 	<div className="buttonClear">
-		{props.children}
+		Clear
 	</div>
 );
 

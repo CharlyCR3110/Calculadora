@@ -1,5 +1,6 @@
 import './App.css';
 import Button from './components/Button'
+import ClearButton from './components/ClearButton';
 import Screen from './components/Screen'
 import logo from './images/calculadoraLogo.png'
 
@@ -38,7 +39,9 @@ function App() {
           <Button>.</Button>
           <Button>/</Button>
         </div>
-        <div className='row'></div>
+        <div className='row'>
+          <ClearButton />
+        </div>
       </div>
     </div>
   );
