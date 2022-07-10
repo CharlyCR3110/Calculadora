@@ -1,10 +1,14 @@
 import './App.css';
 import Button from './components/Button'
 import ClearButton from './components/ClearButton';
-import Screen from './components/Screen'
-import logo from './images/calculadoraLogo.png'
+import Screen from './components/Screen';
+import logo from './images/calculadoraLogo.png';
+import { useState } from 'react';
 
 function App() {
+
+  const [input, setInput] = useState(''); 
+
   return (
     <div className='App'>
       <div className='logoContainer'>
