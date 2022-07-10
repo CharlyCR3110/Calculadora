@@ -21,7 +21,11 @@ function App() {
     setInput('');
   };
   const result = () => {
-    setInput(evaluate(input));
+    if (input) {
+      setInput(evaluate(input));
+    } else {
+      alert('Please enter a valid input');
+    }
   }
 
   return (
