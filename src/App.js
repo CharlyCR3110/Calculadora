@@ -16,6 +16,9 @@ function App() {
   const addInput = value => {
     setInput(input + value);
   };
+  const clearScreen = () => {
+    setInput('');
+  };
 
   return (
     <div className='App'>
@@ -52,7 +55,7 @@ function App() {
           <Button clickHandler={addInput}>/</Button>
         </div>
         <div className='row'>
-          <ClearButton />
+          <ClearButton clickHandler={clearScreen}/>
         </div>
       </div>
     </div>
