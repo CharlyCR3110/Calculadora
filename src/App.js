@@ -7,7 +7,11 @@ import { useState } from 'react';
 
 function App() {
 
-  const [input, setInput] = useState(''); 
+  const [input, setInput] = useState('');
+  
+  const addInput = (value) => {
+    setInput(input + value);
+  };
 
   return (
     <div className='App'>
@@ -18,7 +22,7 @@ function App() {
           className='logo' />
       </div>
       <div className='calculatorContainer'>
-        <Screen />
+        <Screen input={input} />
         <div className='row'>
           <Button>1</Button>
           <Button>2</Button>
