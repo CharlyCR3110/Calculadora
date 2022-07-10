@@ -4,6 +4,7 @@ import ClearButton from './components/ClearButton';
 import Screen from './components/Screen';
 import logo from './images/calculadoraLogo.png';
 import { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
   const clearScreen = () => {
     setInput('');
   };
+  const result = () => {
+    setInput(evaluate(input));
+  }
 
   return (
     <div className='App'>
@@ -49,7 +53,7 @@ function App() {
           <Button clickHandler={addInput}>*</Button>
         </div>
         <div className='row'>
-          <Button clickHandler={addInput}>=</Button>
+          <Button clickHandler={result}>=</Button>
           <Button clickHandler={addInput}>0</Button>
           <Button clickHandler={addInput}>.</Button>
           <Button clickHandler={addInput}>/</Button>
