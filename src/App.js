@@ -17,12 +17,22 @@ function App() {
   const addInput = value => {
     setInput(input + value);
   };
+
   const clearScreen = () => {
     setInput('');
   };
+
   const result = () => {
     if (input) {
-      setInput(evaluate(input));
+      for (let i = 0; i < input.length; i++) {
+        if (!isNaN(input[i]) && !isNaN(input[i+1])){
+          alert('Please enter a valid input');
+          break;
+        } else {
+          console.log('LO paso');
+          setInput(evaluate(input));
+        }
+      }
     } else {
       alert('Please enter a valid input');
     }
